@@ -101,3 +101,76 @@ const codigo = "ABC";
 //preencher com traços para atingir 5 caracteres
 const codigoPreenchido = codigo.padStart(5,"-");
 console.log(codigoPreenchido);
+
+//split 
+const texto = "Essa é uma string com espaços em branco";
+//divide a string em um array de letras, usando espaços como separadores
+const letras = texto.split("");
+console.log(letras);
+//divide a string em uma array de números, acrescentando a vírgula como separadores
+const numeros2 = "1,2,3,4,5".split("");
+console.log(numeros2);
+//divide o texto em strings separadas por palavras
+const partes = texto.split(" ",8);
+console.log(partes);
+
+//join
+const numerosJoin = [1, 2, 3, 4, 5];
+console.log(numerosJoin);
+console.log(typeof numerosJoin); 
+//transorma um array em uma string
+const listaNumeros = numerosJoin.join(); 
+console.log(listaNumeros);
+console.log( typeof listaNumeros);
+
+//Junta os numeros com traço como separador (transformando o array em uma string)
+const listaNumerosTraços = numerosJoin.join("-");
+console.log(listaNumerosTraços);
+
+//transforma um array em string e acrescenta uma strigng desejada na string transformada ("e")
+const frutas = ["maçã", "banana", "laranja"];
+const textoFrutas = frutas.join(" e ");
+console.log(textoFrutas);
+
+//repeat
+
+const testandoRepeat = "Olá";
+//repetindo
+const textRepeat = testandoRepeat.repeat(3);
+console.log(textRepeat);
+//repetindo a string 0 vezes
+const textoVazio = testandoRepeat.repeat(0);
+console.log(textoVazio);
+
+/*rest operator, começa colocando valores fixos que já estao com espaço reservado,
+ e com o args poder colocais mais informações dentro de uma array*/
+function minhaFuncao(a, b, c, ...args){
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(args);
+}
+minhaFuncao(1, 2, 3, 4, 5);
+
+//iterando sobre uma array
+const frutasA = ["maçã", "uva", "melancia"];
+for(const fruta of frutasA){
+    console.log(fruta);
+}
+
+//desestrututrando objetos
+const usuario = {
+    primeiroNome: "José",
+    sobrenome: "Xavier",
+    profissao: "Pedreiro"
+};
+const [primeiroNome, sobrenome, profissao] = Object.values(usuario);
+console.log(primeiroNome, sobrenome, profissao);
+
+//desestruturando array
+const array = ["João", "Maria", "Pedro"];
+const [primeiro, segundo, terceiro] = Object.values(array);
+console.log(primeiro, segundo);
+
+const [quarto, quinto, sexto] = array;
+console.log(quarto, quinto);

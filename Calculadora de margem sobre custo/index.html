@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Margem sobre Custo</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
 </head>
 <body>
   <main class="container">
@@ -14,21 +15,54 @@
         <form class="dados">
         <div>
             <label>Custo do Produto</label>
-            <input type="text">
+            <input type="number" id="Custo" oninput="custodoproduto()">
         </div>
         <div class="mark-up">
             <label>Mark-Up (Porcentagem)</label>
-            <input type="text">
+            <input type="number" id="Porcentagem" oninput="porcentagem()">
         </div>
-            <button class="botão" data-action="Calcular">Calcular</button>
+            <button id="botão" data-action="Calcular" onclick="calcular()">Calcular</button>
         </form>
     </div>
 
     <div class="simulacao">
         <h1>Retorno da Simulação de Margem de Custo</h1>
-        
-        </form>
-
+       <div class="div-visor">
+        <h3>Valor do Custo do Produto</h3>
+        <span id="Valor"></span>
+    </div>
+    <div class="div-visor">
+        <h3>Mark-Up</h3>
+        <span id="mark"></span>
+    </div>
+    <div class="div-visor">
+        <h3>Custo com Mark-Up</h3>
+        <span class="visor"></span>
+    </div>
+    <div class="div-visor">
+        <h3>Preço de Venda</h3>
+        <span class="visor"></span>
+    </div>
+    <div class="div-visor">
+        <h3>ICMS</h3>
+        <span class="visor"></span>
+    </div>
+    <div class="div-visor">
+        <h3>PIS/COF</h3>
+        <span class="visor"></span>
+    </div>
+    <div class="div-visor">
+        <h3>Custo com IPI</h3>
+        <span class="visor"></span>
+    </div>
+    <div class="div-visor">
+        <h3>Margem de Lucro</h3>
+        <span class="visor"></span>
+    </div>
+    <div class="div-visor">
+        <h3>Margem de Lucro com Porcentagem</h3>
+        <span class="visor"></span>
+    </div>
     </div>
   </main>
 </body>

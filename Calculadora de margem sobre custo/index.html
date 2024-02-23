@@ -21,7 +21,7 @@
             <label>Mark-Up (Porcentagem)</label>
             <input type="number" id="Porcentagem" oninput="porcentagem()">
         </div>
-            <button id="botão" data-action="Calcular" onclick="calcular()">Calcular</button>
+            <button type="submit" onclick="mostrar()">Calcular</button>
         </form>
     </div>
 
@@ -37,7 +37,7 @@
     </div>
     <div class="div-visor">
         <h3>Custo com Mark-Up</h3>
-        <span class="visor"></span>
+        <span id="custoComMarkUp"></span>
     </div>
     <div class="div-visor">
         <h3>Preço de Venda</h3>

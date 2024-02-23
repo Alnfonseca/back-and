@@ -29,7 +29,7 @@ margin-top: 30px;
 .mark-up{
     margin-right: 45px;
 }
-.visor, #Valor, #mark{
+.visor, #Valor, #mark, #custoComMarkUp{
  width: 110px;
  height: 30px;
  box-shadow: inset 0 0 10px;

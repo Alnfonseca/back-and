@@ -1,44 +1,52 @@
 body{
     color: white;
     background-color: gray;
-}
-.container{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.geral, .dados{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.geral{
-    border: 3px solid black;
-    padding: 10px;
-    padding-top:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:large;
 }
 
-.dados input, button{
-width: auto;
-height: 30px;
-margin-top: 30px;
-}
-.mark-up{
-    margin-right: 45px;
-}
-.visor, #Valor, #mark, #custoComMarkUp{
- width: 110px;
- height: 30px;
- box-shadow: inset 0 0 10px;
- border: 1px solid;
- margin-top: 12px;
- margin-left: 10px;
- 
-}
-.div-visor{
+.container{
     display: flex;
-    
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
 }
+
+.geral, .dados{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.geral{
+    border:5px solid black;
+    padding: 20px;
+    margin-right: 100px;
+}
+
+.dados input, button {
+    height: 30px;
+    margin-top: 30px;
+}
+span{
+    border: 2px solid white;
+    width: 100px;
+    height: 30px;
+    margin: 16px 10px ;
+    box-shadow: inset 0 0 5px;
+    text-align: center;
+}
+button{
+    height: 40px;
+    width: 80px;
+}
+
+.mark{
+    margin-right: 35px;
+}
+
+.dados-simulacao{
+    display: flex;
+}
+
